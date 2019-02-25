@@ -91,7 +91,8 @@ int main(int argc, char * argv[])
 
 	endRes = Scalar::all(0);
 	enhancedImage.copyTo(endRes, filter);
-	imshow("endRes", endRes  );
+	//imshow("endRes", endRes  );
+	imwrite("out.png", endRes);
 
 	std::cout << "Press any key to continue... " << std::endl;
 	cv::waitKey();
